@@ -25,7 +25,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	/* font: inherit; */
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -114,19 +114,32 @@ body{
 
 .top-text{
     height:40%;
-    background-color: aqua;
+    background-color:#f9fafb;
 }
 
-.intro{
-   
+.intro,.intro2,.intro3{
+    margin-top: 140px;
+    width:63%;
+    padding:0 50px;
+    font-size: 30px;
 }
+
+.intro2{
+    margin-top:0px;
+}
+
+.intro3{
+    margin-top:30px;
+}
+
 
 .middle-form{
     height:40%;
     background-color: blue;
+    box-shadow: 5px 10px 8px #888888;
 }
 
 .login{
     height:20%;
-    background-color: darkmagenta;
+    background-color: white;
 }
