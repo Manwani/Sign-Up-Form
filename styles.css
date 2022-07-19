@@ -1,0 +1,132 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@font-face {
+    font-family: "odin";
+    src: url("Norse-Bold.otf");
+  }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    display: flex;
+}
+
+.left-side{
+    width: 35%;
+    height:100vh;
+    position: relative;
+}
+
+.right-side{
+    width:65%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.background-image-left{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill; 
+}
+
+.banner{
+    position:absolute;
+    width:100%;
+    height:20%;
+    margin-top: 20%;
+    background-color:rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+
+.odin-logo{
+    display: block;
+    height:100%;
+    width:auto;
+}
+
+.odin-text, .credit-text, .credit-link{
+    color:white;
+}
+
+.odin-text{
+    font-family: "odin";
+    font-size: 80px;
+}
+
+.credit-text{
+    width:100%;
+    position:absolute;
+    text-align: center;
+    bottom: 10px;
+}
+
+.top-text{
+    height:40%;
+    background-color: aqua;
+}
+
+.intro{
+   
+}
+
+.middle-form{
+    height:40%;
+    background-color: blue;
+}
+
+.login{
+    height:20%;
+    background-color: darkmagenta;
+}
