@@ -29,9 +29,65 @@
             <p class="intro2">Sign up <em>now</em> to get started.</p>
             <p class="intro3">You <em>know</em> you want to.</p>
         </div>
-        <div class="middle-form"></div>
-        <div class="login"></div>
+        <div class="middle-form">
+            <p class = "form-head">Let's do this!</p>
+            <form action="" method="get" class="form" id="myForm">
+                <ul>
+                    <div class="flex-row">
+                        <li>
+                            <label for="first-name">First Name*</label>
+                            <input type="text" id="first-name" name="first_name" required/>
+                        </li>
+                        <li>
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last_name" />
+                        </li>
+                    </div>
+                    <div class="flex-row">
+                        <li>
+                            <label for="user_email">Email*</label>
+                            <input type="email" id="user-email" name="email" required>
+                        </li>
+                        <li>
+                            <label for="number">Number*</label>
+                            <input type="text" id="number" name="phone-number" minlength="9" required>
+                        </li>
+                    </div>
+                    <div class="flex-row">
+                        <li>
+                            <label for="user_password">Password*</label>
+                            <input type="password" id="user-password" name="password" onkeyup='check();' required> 
+                            <span class="error-message"></span> 
+                        </li>
+                        <li>
+                            <label for="confirm_password">Confirm Password*</label>
+                            <input type="password" id="confirm-password"  name="confirm_password" onkeyup='check();' required>
+                        </li>
+                    </div>
+                </ul>
+            </form>
+        </div>
+        <div class="login">
+            <button type="submit" form="myForm" >Create Account</button>
+            <p class="bottomText">Already have an account? <a href="" class="login-text">Log in</a></p>
+        </div>
    </div>
+
+   <script>
+       function check(){
+           if(document.getElementById("user-password").value !== document.getElementById("confirm-password").value){
+               document.querySelector(".error-message").textContent = "*Passwords do not match"
+               document.querySelector(".error-message").style.display = "inline-block"
+               document.getElementById("user-password").classList = "error";
+               document.getElementById("confirm-password").classList = "error";
+           }
+           else{
+            document.querySelector(".error-message").style.display = "none";
+            document.getElementById("user-password").classList = " ";
+            document.getElementById("confirm-password").classList = " ";
+           }
+       }
+   </script>
     
 </body>
 </html>

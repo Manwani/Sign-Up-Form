@@ -3,6 +3,10 @@
    License: none (public domain)
 */
 
+:root{
+    --left-side-margin: 50px;
+}
+
 @font-face {
     font-family: "odin";
     src: url("Norse-Bold.otf");
@@ -114,13 +118,14 @@ body{
 
 .top-text{
     height:40%;
-    background-color:#f9fafb;
+    background-color:#eceef1;
 }
 
 .intro,.intro2,.intro3{
     margin-top: 140px;
     width:63%;
-    padding:0 50px;
+   /*  padding:0 50px; */
+   margin-left:var(--left-side-margin);
     font-size: 30px;
 }
 
@@ -135,11 +140,95 @@ body{
 
 .middle-form{
     height:40%;
-    background-color: blue;
-    box-shadow: 5px 10px 8px #888888;
+    background-color:white;
+    box-shadow: 0 10px 6px -6px #777;
 }
 
 .login{
+    margin-top:10px;
     height:20%;
-    background-color: white;
+    background-color: #eceef1;
 }
+
+.form-head{
+    margin-top:20px;
+    margin-left: var(--left-side-margin);
+    font-size: 30px;
+}
+
+.form{
+    width: 55%;
+    height:70%;
+    margin-left:var(--left-side-margin);
+    margin-top:20px;
+}
+
+ input, label{
+    display: block;
+}
+
+input{
+    border: 2px solid #E5E7EB;
+    padding: 5px;
+    border-radius: 5px;
+    width:300px;
+}
+
+input:focus{
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 6px 6px -6px #777;
+
+}
+
+
+.flex-row{
+    display:flex;
+   justify-content: space-between;
+}
+
+ul{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+button{
+    margin-top:30px;
+    margin-left:var(--left-side-margin);
+    border: none;
+    background-color: #596D48;
+    padding: 12px 48px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.bottomText{
+    margin-top:30px;
+    margin-left:var(--left-side-margin);
+    font-size:18px;
+}
+
+.login-text{
+    color:#596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.error-message{
+    color:red;
+    font-size:12px;
+}
+
+.error{
+    border: 2px solid red;
+}
+
+input.error:focus{
+    border: 2px solid red;
+}
+
